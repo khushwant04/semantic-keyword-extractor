@@ -1,5 +1,13 @@
-fastapi[all]
-uvicorn
+# Install CPU-only version of PyTorch first
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+torchaudio
+
+# Core dependencies
+fastapi
+uvicorn[standard]
 nltk
 spacy
 sentence-transformers
+numpy
